@@ -1,0 +1,22 @@
+<sly data-sly-use.model="com.adobe.aem.desertwolves.core.models.UpComingGamesModel"></sly>
+<div class="game-schedule">
+    <div class="game-schedule__container">
+        <div class="game-schedule__heading">
+            <p class="game-schedule__title">${model.title}</p>
+            <a href="${model.ctaLink}" target="${model.target}" class="game-schedule__view-all">${model.ctaLabel}
+                <img src="${model.ctaIcon}" alt="icon">
+            </a>
+        </div>
+        <div class="game-schedule__cards">
+            <sly data-sly-list="${model.gameCards}">
+            <div class="game-schedule__card">
+                <p class="game-schedule__type">${item.scheduleType}</p>
+                <img src="${item.image}" alt="image" class="game-schedule__image"/>
+                <p class="game-schedule__team-name">${item.teamName}</p>
+                <p class="game-schedule__time">${item.date} <br/> ${item.time}</p>
+                <button class="game-schedule__button"><span>${item.ctaLabel}</span></button>
+            </div>
+            </sly>
+        </div>
+    </div>
+</div>

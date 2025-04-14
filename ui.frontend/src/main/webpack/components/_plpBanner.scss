@@ -1,0 +1,197 @@
+
+.merch-showcase-wrapper {
+    display: inline-flex;
+    height: 648px;
+    // padding: 56px 51.678px 56px 41px;
+    align-items: center;
+    flex-shrink: 0;
+    background: #FFF;
+    width: 100%;
+  
+
+  .merch-showcase {
+    display: flex;
+    gap: 52px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .merch-showcase-heading {
+    // transform: rotate(-90deg);
+    // width: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .merch-showcase-heading .las-vegas {
+    color: transparent;
+    text-align: start;
+    font-size: 112px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -3.36px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px #B9571A;
+  }
+
+  .merch-showcase-heading .wolves {
+    text-align: start;
+    // -webkit-text-stroke-width: 3;
+    // -webkit-text-stroke-color: #FFF;
+    color: #28455C;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1.68px;
+    text-transform: uppercase;
+  }
+
+  .merch-showcase-heading .sub_heading{
+    font-size: 20px;
+    color: #474747;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 30px;
+    max-width: 437px;
+  }
+
+  .merch-showcase-heading button {
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #B9571A;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.48px;
+    border-radius: 32px;
+    margin-top: 30px;
+  }
+
+  .merch-showcase-products {
+    display: flex;
+    gap: 56px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-card {
+    display: flex;
+    width: 306.661px;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+
+  .product-card-image {
+    width: 306.661px;
+    height: 306.661px;
+    flex-shrink: 0;
+    border: 3px solid #FFF;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-card-image img.jersey{
+    width: 404px;
+  }
+
+  .product-card-image img.hoodie{
+    width: 550px;
+  }
+
+  .product-card-image img {
+    flex-shrink: 0;
+  }
+
+
+
+.merch-showcase-details-heading-white {
+    color: #FFF;
+    opacity: 0.8;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.merch-showcase-details-heading-gray {
+    color: #404040;
+    opacity: 0.8;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+  .merch-showcase-details-description {
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.72px;
+  }
+  
+.merch-showcase-details-heading-white {
+    color: #FFF;
+    opacity: 0.8;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.merch-showcase-details-heading-gray {
+    color: #404040;
+    opacity: 0.8;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+  .merch-showcase-details-description {
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.72px;
+  }
+}

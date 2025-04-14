@@ -1,0 +1,98 @@
+//== Base
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+html,
+body {
+    margin: 0;
+    font-size:   $font-size;
+    font-family: $font-family;
+    line-height: $font-height;
+    color:       $color-foreground;
+    background:  $color-background;
+
+    // commenting this for now cause of the color changing in dark theme
+
+    // @media (prefers-color-scheme: dark) {
+    //     color:       $color-foreground-dark;
+    //     background:  $color-background-dark;
+    // }
+}
+
+
+a {
+    color: $ct-color-primary-dark;
+
+    // @media (prefers-color-scheme: dark) {
+    //     color: $color-link-dark;
+    // }
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
+}
+
+
+
+// UI Kit button styles
+
+.ct-button {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 32px;
+    text-align: center;
+    font-family: $ct-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 16px */
+    letter-spacing: -0.16px;
+    cursor: pointer;
+}
+
+.ct-button-primary {
+    color: $ct-color-white;
+    background-color: $ct-color-primary;
+}
+
+.ct-button-primary:hover {
+    color: $ct-color-primary-dark;
+    background-color: $ct-color-white;
+}
+
+.ct-button-secondary {
+    color: $ct-color-primary-dark;
+    border: 1.5px solid $ct-color-primary-dark;
+}
+
+.ct-button-secondary:hover {
+    color: $ct-color-white;
+    border: 1.5px solid $ct-color-white;
+}
+
+.ct-button-tertiary {
+    color: $ct-color-primary-dark;
+}
+
+.ct-button-tertiary:hover {
+    color: $ct-color-white;
+}
+
+@media (min-width:770px) and (max-width: 1320px) {
+    body{
+        min-width: 1400px;
+    }
+}

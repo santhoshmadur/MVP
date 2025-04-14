@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="PDP Container"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <productdetails
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <producttype
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Product Type"
+                                                name="./productType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <product-hat
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="product-hat"
+                                                        value="product-hat"/>
+                                                    <product-hoodie
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="product-hoodie"
+                                                        value="product-hoodie"/>
+                                                    <product-jersey
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="product-jersey"
+                                                        value="product-jersey"/>
+                                                </items>
+                                            </producttype>
+                                            <producttitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Product Title"
+                                                name="./productTitle"/>
+                                            <productprice
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Product Price"
+                                                name="./productPrice"/>
+                                            <productdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Product Description"
+                                                name="./productDescription"/>
+                                            <productdetailsdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldLabel="Product Details Description"
+                                                name="./productDetailsDescription"/>
+                                            <productmade
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Product Made"
+                                                name="./productMade"/>
+                                            <genderoptions
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./genderOptions"
+                                                text="Is Gender Options Available for this Product "
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <coloroptions
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./colorOptions"
+                                                text="Is Color Options Available for this Product "
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <sizeoptions
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./sizeOptions"
+                                                text="Is Size Options Available for this Product "
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <womenslabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Womens Label"
+                                                    name="./womensLabel"/>
+                                            <menslabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Mens Label"
+                                                    name="./mensLabel"/>
+                                            <colorslabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Colors Label"
+                                                    name="./colorsLabel"/>
+                                            <sizeslabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Sizes Label"
+                                                    name="./sizesLabel"/>
+                                            <onesizelabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="One Size Label"
+                                                    name="./oneSizeLabel"/>
+                                            <addtobagctalabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Add To Bag CTA Label"
+                                                    name="./addToBagCtaLabel"/>
+                                            <tryonwithaictalabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Try On With AI CTA Label"
+                                                    name="./tryOnWithAiCtaLabel"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </productdetails>
+                    <productimages
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Images"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <productimage1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Image 1"
+                                                name="./productimage1"
+                                                rootPath="/content/dam/desertwolves"/>
+                                            <productimage2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Image 2"
+                                                name="./productimage2"
+                                                rootPath="/content/dam/desertwolves"/>
+                                            <productimage3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Image 3"
+                                                name="./productimage3"
+                                                rootPath="/content/dam/desertwolves"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </productimages>
+                    <productcolors
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Product Colors"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <productcolor1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Color 1"
+                                                name="./productcolor1"
+                                                rootPath="/content/dam/desertwolves"/>
+                                            <productcolor2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Color 2"
+                                                name="./productcolor2"
+                                                rootPath="/content/dam/desertwolves"/>
+                                            <productcolor3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Color 3"
+                                                name="./productcolor3"
+                                                rootPath="/content/dam/desertwolves"/>
+                                            <productcolor4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Product Color 4"
+                                                name="./productcolor4"
+                                                rootPath="/content/dam/desertwolves"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </productcolors>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

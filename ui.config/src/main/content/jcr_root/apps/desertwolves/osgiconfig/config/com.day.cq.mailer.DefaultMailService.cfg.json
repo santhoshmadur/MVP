@@ -1,0 +1,12 @@
+{
+  "smtp.host": "smtp.gmail.com",
+  "smtp.port": "465",
+  "smtp.user": "timesheet.notifications@vation.com",
+  "smtp.password": "gqbw wkzc iimr mkre",
+  "from.address": "noreply@google.com",
+  "smtp.ssl": true,
+  "smtp.starttls": false,
+  "smtp.requiretls": false,
+  "debug.email": false,
+  "oauth.flow": false
+}

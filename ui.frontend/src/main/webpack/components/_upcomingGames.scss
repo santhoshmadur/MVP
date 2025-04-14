@@ -1,0 +1,142 @@
+.game-schedule {
+    width: 100%;
+    display: flex;
+    padding: 48px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: rgba($ct-color-light, 0.20);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $ct-color-primary-dark;
+        font-family: "Helvetica Neue";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.44px;
+        text-transform: uppercase;
+    }
+
+    &__view-all {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: $ct-color-primary-dark;
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.42px;
+        text-decoration: none;
+        border-radius: 32px;
+        border: 1.5px solid $ct-color-primary-dark;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        align-self: stretch;
+        justify-content: space-between;
+    }
+
+    &__card {
+        display: flex;
+        width: 240px;
+        height: 341px;
+        padding: 24px 32px;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: $ct-color-white;
+    }
+
+    &__type {
+        color: rgba(225, 225, 225, 0.60);
+        ;
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: -1.8px;
+        text-transform: uppercase;
+    }
+
+    &__image {
+        width: 124px;
+        height: 124px;
+        flex-shrink: 0;
+        border-radius: 124px;
+        margin-top: -40px;
+    }
+
+    &__team-name {
+        color: $ct-color-primary-dark;
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.72px;
+        height: 4pc;
+        margin-top: 8px;
+    }
+
+    &__time {
+        color: $ct-color-black;
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.48px;
+    }
+
+    &__button {
+        margin-top: 16px;
+        color: $ct-color-white;
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        /* 14px */
+        letter-spacing: -0.14px;
+        display: flex;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 32px;
+        background: $ct-color-primary;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__button span {
+        width: 128px;
+    }
+}

@@ -1,0 +1,119 @@
+.FPOHeroBannerWrapper {
+    display: block;
+    padding: 70px;
+    height: 772px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -50px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-self: stretch;
+        margin-top: 88px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+
+        &--heading {
+            width: 780px;
+            text-align: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &-heading {
+            color: $ct-color-white;
+            font-family: "Helvetica Neue";
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 48px */
+            font-size: 4pc;
+            letter-spacing: 0.11pc;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            color: $ct-color-white;
+            font-family: "Helvetica Neue";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 24px */
+            letter-spacing: -0.72px;
+            width: 400px;
+        }
+
+        &--left,
+        &--right {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 454px;
+            flex-direction: column;
+        }
+
+        &--left {
+            align-items: flex-start;
+        }
+        &--right {
+            align-items: flex-end;
+            text-align: end;
+        }
+    }
+    
+    .white-border-heading {
+        font-size: 112px;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: -1.68px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 2px $ct-color-white;
+        letter-spacing: -3.36px;
+    }
+
+    .bigger-font {
+        font-size: 112px;
+    }
+    &-cta-wrapper{
+        display: flex;
+        gap: 8px;
+    }
+
+    &-cta-button {
+        display: flex;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 32px;
+        background: $ct-color-white;
+        color: #404040;
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        /* 14px */
+        text-decoration: none;
+        letter-spacing: -0.42px;
+    }
+
+    &-cta-button.secondary {
+        background: transparent;
+        color: $ct-color-white;
+        border: 1.5px solid $ct-color-white;
+    }
+}

@@ -1,0 +1,54 @@
+<sly data-sly-use.model="com.adobe.aem.desertwolves.core.models.FooterNavigationModel"></sly>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-column">
+                <ul>
+                    <sly data-sly-list="${model.firstColumn}">
+                        <li>
+                            <a href="${item.navLink}" target="${item.navTarget}"> ${item.navTitle} </a>
+                        </li>
+                    </sly>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <sly data-sly-list="${model.secondColumn}">
+                        <li>
+                            <a href="${item.navLink}" target="${item.navTarget}"> ${item.navTitle} </a>
+                        </li>
+                    </sly>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <sly data-sly-list="${model.thirdColumn}">
+                        <li>
+                            <a href="${item.navLink}" target="${item.navTarget}"> ${item.navTitle} </a>
+                        </li>
+                    </sly>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <sly data-sly-list="${model.fourthColumn}">
+                        <li>
+                            <a href="${item.navLink}" target="${item.navTarget}"> ${item.navTitle} </a>
+                        </li>
+                    </sly>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <div class="footer-icons-text">${model.socialTitle}</div>
+            <div class="footer-icons-social">
+                <sly data-sly-list="${model.socialIcons}">
+                    <a href="${item.socialLink}" target="${item.socialTarget}">
+                        <img src="${item.socialIcon}" alt="Social Icon" />
+                    </a>
+                </sly>
+            </div>
+        </div>
+    </div>
+    <a class="footer-circle" style="background-image: url('${model.footerLogo @context='uri'}')" href="${model.footerLink}" target="${model.footerTarget}"></a>
+</footer>

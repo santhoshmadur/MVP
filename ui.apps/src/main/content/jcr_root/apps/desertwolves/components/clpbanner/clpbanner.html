@@ -1,0 +1,59 @@
+<div class="heroBanner-main">
+  <div class="heroBanner-container" style="background-image: url('${properties.backgroundImage @context='uri'}');">	
+    <div class="heroBanner">
+      <div class="heroBanner-content-wrapper">
+        <div class="heroBanner-heading">
+            <div class="heroBanner-heading-fillText white-border-heading bigger-font">${properties.title}</div>
+            <div class="heroBanner-heading-dashedText white-heading">${properties.subTitle}</div>
+            <div class="heroBanner-heading-dashedText white-sub-heading">${properties.description}</div>
+        </div>
+        <div class="heroBanner-content">
+          <div class="heroBanner-content-text-wrapper">
+           <div class="heroBanner-content-text">
+            ${properties.instruction}
+           </div>
+          </div>
+          <a class="heroBanner-content-button" href="${properties.ctaLink}" target="${properties.target}">${properties.ctaLabel}
+          <img src="${properties.ctaIcon}" alt="start Icon" />
+		</a>
+        </div>
+      </div>
+      <div class="heroBanner-levels">
+        <div class="heroBanner-level">
+          <div class="heroBanner-level-image" style="background-image: url('${properties.cardImage @context='uri'}');"></div>
+          <div class="heroBanner-level-text">1</div>
+        </div>
+        <div class="heroBanner-level">
+          <div class="heroBanner-level-image" style="background-image: url('${properties.cardImage @context='uri'}');"></div>
+          <div class="heroBanner-level-text">2</div>
+        </div>
+        <div class="heroBanner-level">
+          <div class="heroBanner-level-image" style="background-image: url('${properties.cardImage @context='uri'}');"></div>
+          <div class="heroBanner-level-text">3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const modal = document.getElementById("gameModal");
+  const closeButton = document.querySelector(".close-button");
+  let isPopupShown = false;
+  window.setTimeout(() => {
+    if(!isPopupShown){
+      modal.classList.remove("hidden");
+    }
+  }, 10000);
+  closeButton.addEventListener("click", () => {
+    if(modal){
+      modal.classList.add("hidden");
+      isPopupShown = true;
+    }
+  });
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.add("hidden");
+      isPopupShown = true;
+    }
+  });
+</script>

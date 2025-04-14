@@ -1,0 +1,54 @@
+<sly data-sly-use.model="com.adobe.aem.desertwolves.core.models.GroupTicketsModel"></sly>
+<div class="grouptickets">
+    <div class="group-tickets">
+        <div class="game-container">
+            <div class="game-container__textBlock">
+                <h1>${model.title}</h1>
+                <div class="text-block-max-font">${model.description}</div>
+            </div>
+            <div class="game-container__ticketsBlock">
+                <sly data-sly-list="${model.seasonTickets}">
+                    <div class="ticketCardParent">
+                        <!-- card background Image -->
+                        <div class="ticketCard" style="background-image: url('${item.image @context='uri'}');">
+                            <div class="heading">${item.textOnImage}</div>
+                        </div>
+                        <div class="ticketCardParent--description">
+                            <div class="description">${item.startingPrice}</div>
+                            <div class="price">${item.description}</div>
+                            <a class="ct-button ${item.ticketStatus}" href="${item.ctaLink}" target="${item.ctaTarget}">${item.ctaLabel}</a>
+                        </div>
+                    </div>
+                </sly>
+            </div>
+            <div class="game-container__groupticketsBlock">
+                <!-- block background Image -->
+                <div class="game-container__groupticketsBlock--leftSection" style="background-image: url('${model.image @context='uri'}');">
+                    <div class="game-container__groupticketsBlock--leftSection-header">${model.textOnImage}</div>
+                </div>
+                <div class="game-container__groupticketsBlock--rightSection">
+                    <div class="ame-container__groupticketsBlock--rightSection-description">
+                        <p>${model.secondDescription}</p>
+                    </div>
+                    <div class="game-container__groupticketsBlock--rightSection-option">
+                        <sly data-sly-list="${model.titleAndDescription}">
+                            <div class="option">
+                                <h3>${item.title}</h3>
+                                <p>${item.description}</p>
+                            </div>
+                        </sly>
+                    </div>
+                    <div class="game-container__groupticketsBlock--rightSection-footer">
+                        <a class="ticketsBlock--button ct-button ct-button-primary" href="${model.ctaLink}" target="${model.ctaTarget}">${model.ctaLabel}</a>
+                        <span class="icon-border">
+              <img src="${model.phoneIcon}" alt="phone">
+            </span>
+                        <span class="icon-border">
+              <img src="${model.mailIcon}" alt="mail">
+            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>ˀ

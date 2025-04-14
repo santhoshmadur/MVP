@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/desertwolves/clientlibs"/>
+    <filter root="/apps/desertwolves/components"/>
+    <filter root="/apps/desertwolves/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,43 @@
+<sly data-sly-use.model="com.adobe.aem.desertwolves.core.models.ScheduleTicketsModel"></sly>
+<div class="scheduletickets">
+    <div class="schedule-tickets">
+        <div class="schedule-container">
+            <!-- Banner Image -->
+            <div class="schedule-container__banner" style="background: url('${model.heroBgImage @context='uri'}') no-repeat;background-size: 100% 360px;">
+                <div class="banner-opacity">${model.heroTitle}</div>
+            </div>
+            <div class="schedule-container__tickets-container">
+                <div class="schedule-container__tickets-container--topBlock topBlock">
+                    <div class="topBlock--header">
+                        <div class="heading">${model.cardTitle}</div>
+                        <div class="controls">
+                            <button class="filter-sort-button">
+                                <span>${model.ctaLabel}</span>
+                                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M4 8H12M2 4H14M6 12H10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="topBlock--containerInfo">
+                        <p>${model.cardDescriptionOne}</p>
+                        <p>${model.cardDescriptionTwo}</p>
+                    </div>
+                </div>
+                <div class="schedule-container__tickets-container--card-block">
+                    <sly data-sly-list="${model.gameCards}">
+                        <div class="scheduleCard">
+                            <p class="scheduleCard--groundType">${item.scheduleType}</p>
+                            <img src="${item.image}" alt="image" class="scheduleCard--image">
+                            <p class="scheduleCard--name">${item.teamName}</p>
+                            <p class="scheduleCard--time">${item.date} <br /> ${item.time} </p>
+                            <a class="scheduleCard--button ct-button " href="${item.ctaLink}" target="${item.ctaTarget}">${item.ctaLabel}</a>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

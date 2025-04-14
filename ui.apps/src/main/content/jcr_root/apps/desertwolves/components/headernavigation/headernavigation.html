@@ -1,0 +1,28 @@
+<div class="headernavigation__wrapper" data-sly-use.model="com.adobe.aem.desertwolves.core.models.HeaderNavigationModel">
+    <div class="headernavigation__left">
+        <div class="multifield-wrapper">
+            <div class="multifield-wrapper__image">
+                <a href="${model.headerLogoLink}" target="${model.linkTarget}">
+                    <img src="${model.headerLogo}" alt="logo">
+                </a>
+            </div>
+            <div class="multifield-wrapper__text">
+                <sly data-sly-list.nav="${model.navLinks}">
+                <a href="${nav.navLink}" target="${nav.linkTarget}">${nav.navTitle}</a>
+                </sly>
+            </div>
+        </div>
+    </div>
+    <div class="headernavigation__right">
+        <p class="search">${model.searchText}
+            <span>
+                <img src="${model.searchIcon}" alt="searchIcon">
+            </span>
+        </p>
+        <p class="add-to-bag">${model.addToBagText}
+            <span>
+                <img src="${model.addToBagIcon}" alt="addToBagIcon">
+            </span>
+        </p>
+    </div>
+</div>
