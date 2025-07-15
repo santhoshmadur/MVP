@@ -335,6 +335,11 @@ Bundle-DocURL:
             </execution>
                                 
           </executions>
+          <configuration>
+            <bnd>
+              Export-Package: com.adobe.guides.aspects
+            </bnd>
+          </configuration>
                               
           <dependencies>
                                     
